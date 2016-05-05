@@ -13,6 +13,7 @@ angular.module('myApp')
       });
 
       $scope.total = response.totalPages;
+      //need to load a view showing people how to use the ap
       console.log('this is a response',response);
       $scope.$broadcast('scroll.infiniteScrollComplete');
     }).error(function (err) {
